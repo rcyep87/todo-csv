@@ -41,11 +41,11 @@ class TodoTest < MiniTest::Test
     assert_equal("1) finish homework", $output[1], "The todo found in 'test_todos.csv' were not printed") # Then
   end
 
-  #def test_add_todo_prints_prompt
-  #  todo_setup # Given
-  #  @todo.add_todo
-  #  assert_equal("Name of Todo > ", $output.last, "The last message printed should have been the prompt")
-  #end
+  def test_add_todo_prints_prompt
+   todo_setup # Given
+   @todo.add_todo
+   assert_equal("Name of Todo > ", $output.last, "The last message printed should have been the prompt")
+  end
 
   #def test_add_todo_creates_new_todo
   #  todo_setup # Given
